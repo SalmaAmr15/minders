@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            margin: auto;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .best {
+            display: flex;
+            width: 100%;
+            height: fit-content;
+            background:
+                linear-gradient(black, black) 0 0,
+                linear-gradient(black, black) 0 0,
+                linear-gradient(black, black) 100% 100%,
+                linear-gradient(black, black) 100% 100%,
+                white;
+            /* background-size: 0 2px, 2px 0; */
+            background-repeat: no-repeat;
+            background-origin: content-box;
+            overflow: hidden;
+            animation: moveLines 4s infinite alternate;
+        }
+
+        @keyframes moveLines {
+            0% {
+                background-size: 0 2px, 2px 250px;
+            }
+
+            50% {
+                background-size: 200px 2px, 2px 0;
+            }
+
+            75% {
+                background-size: 0 2px, 2px 0;
+            }
+
+            100% {
+                background-size: 200px 2px, 2px 250px;
+            }
+        }
+
+
+        .best .image {
+            width: 50%;
+            /* height: 75%; */
+            margin: 20px;
+            text-align: center;
+            background-image: linear-gradient(133deg, #f40078, #f259a6, #65004a);
+            border-top-left-radius: 50%;
+            position: relative;
+            animation: squareToCircle 2s 1s infinite alternate;
+        }
+
+        @keyframes squareToCircle {
+            0% {
+                border-radius: 0 0 0 0;
+            }
+
+            25% {
+                border-radius: 50% 0 0 0;
+            }
+
+            50% {
+                border-radius: 50% 50% 0 0;
+            }
+
+            75% {
+                border-radius: 50% 50% 50% 0;
+            }
+
+            100% {
+                border-radius: 50% 50% 50% 50%;
+            }
+        }
+
+
+
+        .best img {
+            width: 100%;
+            height: auto;
+            position: relative;
+            transition: all 0.5s ease;
+        }
+
+        .best .disc {
+            display: flex;
+            gap: 25px;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding: 20px;
+            border-radius: 10px;
+            transition: all 0.4s ease-in-out;
+            margin: 50px;
+            position: relative;
+            /* width: 25%; */
+        }
+
+        .best button {
+            width: 90%;
+            margin: 10px auto;
+        }
+
+        nav .favProducts .heart-icon {
+            position: relative;
+            font-size: 30px;
+            cursor: pointer;
+            color: #f40078;
+        }
+
+        nav .favProducts .badge {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background-color: black;
+            color: white;
+            border-radius: 50%;
+            padding: 5px;
+            font-size: 12px;
+            width: 10px;
+            height: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="favProducts">
+            <span class="heart-icon heart-checked">
+                &#10084;
+                <span class="badge" id="badge">0</span>
+            </span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="best">
+            <div class="disc">
+                <h3>Product Name</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quos nam dolores voluptas, nisi
+                    deleniti quod minima suscipit, veritatis incidunt consectetur quaerat, architecto rem voluptatum.
+                </p>
+                <button>Add to cart</button>
+            </div>
+            <div class="image">
+                <img src="./olaplex-hair-set-removebg-preview.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const fav = document.getElementById('favourites');
+        const badge = document.getElementById('badge');
+        let count = 0;
+
+        fav.onclick = function () {
+            count++;
+            badge.textContent = count;
+        };
+    </script>
+</body>
+
+</html>
