@@ -1,0 +1,313 @@
+*{
+    font-family: "Outfit", sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+.Big-container{
+    height: 90vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+@media (min-width:2400px){
+    .Big-container{
+        align-items: center;
+    }
+    .container{
+        width: 42% !important;
+        height: 84% !important;
+    bottom: 77px;
+    }
+    .input-box{
+        width: 132%;
+        height: 127%;
+        position: relative;
+        right: 26px;
+    }
+    .input-box>.button>button{
+        top: 64px !important;
+        font-size: 158%;
+    }
+    .input-box>i{
+        font-size: 190%;
+        bottom: 39px !important;
+        right: 31px !important;
+    }
+    h1{
+        font-size: 457%
+    }
+    form{
+        margin-right: 50px;
+        right: 14px;
+    }
+    input{
+        width: 100% !important;
+        font-size: 200% !important;
+    }
+    label{
+        font-size: 250%;
+    }
+    .form>form>.input-box2>button{
+        padding: 16px 12px !important;
+        width: 117% !important;
+        font-size: 150%;
+        font-weight: 900;
+    }
+    .container>.i>div{
+        border: 12px solid  var(--clr) !important;
+    }
+    .error{
+        font-size: 180% !important;
+        font-weight: 700;
+        bottom:10px;
+        left: 90px !important;
+    }
+    .error::before{
+        bottom: 35px !important;
+
+    }
+}
+@media(min-width:1500px)and(max-width:2559px){
+    .Big-container{
+        align-items: center;
+    }
+    .container{
+        width: 54% !important;
+        height: 69% !important;
+        top: 192px !important;
+    } 
+}
+@media (min-width:350px) and (max-width:500px){
+    .Big-container{
+        height: 100vh !important;
+    }
+    .container{
+        width: 100% !important;
+        height: 52% !important;
+        top: 125px !important;
+    }
+}
+@media (min-width:312px) and (max-width:319px){
+    .container{
+        width: 100% !important;
+        height: 53% !important;
+        top: 102px !important;
+    }
+    h1{
+        font-size: 110% !important;
+    margin-top: 50px !important; 
+    }
+    .form{
+        bottom: 25px;
+    position: relative
+    }
+    form{
+        gap:5px !important;
+    }
+    .form >form >.input-box2>button{
+        width: 75% !important;
+    }
+    .input-box2{
+        margin-left: 42.5px !important;
+        margin-bottom: 10px !important;
+    }
+    input{
+        width:100% !important;
+        padding: 5px 0px!important;
+    }
+    .input-box2>.button >button{
+        margin-top: 10px !important;
+        padding: 0px !important;
+    }
+    .input-box2>.button >button :hover{
+        transform: scale(1.1) !important;
+    }
+}
+@media (min-width: 320px) and(max-width:411px) {
+    .Big-container{
+        align-items: center;
+    }
+    .container{
+        width: 100% !important;
+        height: 49% !important;
+        top: 129px !important;
+    } 
+    .pass{
+        left:60px !important;
+    }
+h1{
+    font-size: 100% !important;
+}
+.input-box>.button>button{
+    right:20px !important;
+
+}
+input{
+    width: 90% !important;
+    padding: 0px !important;
+}} 
+
+
+.container{
+display: grid;
+position: relative;
+width: 550px;
+height: 550px;
+top:20px;
+justify-content: center;
+}
+.container >.i>div{
+    position: absolute;
+    inset: 0;
+    transition: all 0.5s ease;
+    border:2px solid black;
+}
+.container >.i>.one{
+    border-radius:38% 62% 63% 37% / 41% 44% 56% 59%;
+    animation: anim 6s linear infinite;
+}
+.container>.i>.two{
+    border-radius:41% 44% 56% 59% /38% 62% 63% 37%;
+    animation: anim 6s linear infinite;
+}
+.container >.i>.three{
+    border-radius:41% 44% 56% 59% /38% 62% 63% 37%;
+    animation: anim2 10s linear infinite;
+}
+.container>.i>div{
+    border: 6px solid var(--clr);;
+    filter: drop-shadow(0 0 20px var(--clr));
+}
+@keyframes anim{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes anim2{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 13px;
+    z-index: 2;
+    align-items: center;
+    height: 50%;
+}
+h1{
+    font-weight: 800;
+    color: #ab4c86;
+}
+
+.input-box>.button>button{
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    right:8px;
+    color: rgb(227, 126, 183);
+    cursor: pointer;
+}
+.input-box>.button>.image{
+margin-top: 5px;
+}
+.input-box>.button>.imagee{
+    top:24px;
+}
+/* .input-box2>button{
+    padding: 26px 12px;
+    width: 117%;
+} */
+
+input{
+    width: 110%;
+    border-radius: 25px;
+    border:1px solid rgb(255, 192, 238);
+    height: 40%;
+    padding: 6px 35px 6px 10px;
+}
+form{
+    display: grid;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 17px;
+}
+label{
+    position: relative;
+}
+.pass{
+    left:85px;
+}
+.confirm-pass{
+    left: 60px;
+}
+.input-box>i{
+    color: #ab4c86;
+    position: relative;
+    bottom: 25px;
+    right: 16px;
+}
+.input-box2{
+    position: relative;
+    right:0px;
+    margin-left: 22.5px;
+}
+.form>form>.input-box2>button{
+    border-radius: 25px;
+    border:1px solid rgb(231, 85, 184);
+    cursor: pointer;
+    background-image: linear-gradient(250deg, #f40078, #f259a6, #65004a);
+    color: #ffdef2;
+    text-align: center;
+    padding: 10px 0px;
+    width: 99%;
+}
+/* .input-box2>.button1{
+    margin-right:10px;
+} */
+.input-box2>button:hover{
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+    box-shadow:1px 2px 15px rgb(115, 16, 83);
+}
+.error::before{
+content: "";
+width: 0px;
+height: 0px;
+background-color: black;
+position: absolute;
+border-width: 10px;
+border-style: solid;
+border-color:  white white rgb(145, 35, 107) white;
+z-index: 2;
+bottom: 20px;
+
+}
+.error{
+    display: none;
+    transition: all 0.5s ease-in-out;
+    opacity: 3;
+    position: relative;
+}
+/* .input-box .error{
+    transition: all 0.5s ease-in-out;
+    opacity: 3;
+    position: relative;
+    display: block;
+    margin: 0;
+
+} */
+
+
+

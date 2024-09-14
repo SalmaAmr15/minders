@@ -1,0 +1,1418 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+section{
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.line{
+    width: 200%;
+    background-color: #FF5492;
+    line-height: 40px;
+    font-size: 15px;
+}
+.line pre{
+   display: inline-block;
+    animation: line 15s  linear infinite ;
+    color: white;
+}
+@keyframes line {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+.logo{
+    float: left;
+    padding-left: 50px;
+}
+.logo img{
+    width: 200px;
+}
+.logo1 img{
+    width: 50px;
+    float: left;
+    display: none;
+}
+.ulnav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+    right: 100px;
+    bottom:15px;
+}
+.ulnav2{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    list-style: none;
+    display: none;
+}
+@media(min-width:320px) and (max-width:480px){
+
+}
+.ulnav li{
+    padding: 30px;
+}
+.ulnav li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 15px;
+    transition-duration: 0.5s;
+}
+.ulnav li a:hover{
+    text-shadow: 2px 1px #FFCCEA;
+    color: #FF5492;
+    font-size: 18px;
+}
+.ulnav2 li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 15px;
+    transition-duration: 0.5s;
+}
+.ulnav2 li a:hover{
+    text-shadow: 2px 1px #FFCCEA;
+    color: #FF5492;
+    font-size: 18px;
+}
+.checkbox{
+    font-size: 30px;
+    color: white;
+    float: right;
+    margin-right: 30px;
+    line-height: 35px;
+    display: none;
+}
+.ullogin {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-right: 50px;
+    position: relative;
+    top: -80px;
+    left: 1300px;
+}
+@media (min-width:320px) and (max-width:385px){
+    .logo img{
+        display: inline-block;
+        width: 120px;
+        margin-top: -7px;
+        position: relative;
+        left: -47px;
+    }
+    .ulnav{
+        display: none;
+    }
+    .checkbox{
+        display: inline-block;
+        color:#FF5492;
+        position: relative;
+        top: 9px;
+       right: 20px;
+    }
+    .line{
+        line-height: 20px;
+    }
+    .line pre{
+        font-size: 10px;
+    }
+    .vid{
+      margin-top: 50px;
+    }
+    .ullogin{
+        float: right;
+        position: relative;
+        top: -30px;
+        left: -10px;
+    }
+    .ullogin li i{
+        font-size: 15px;
+    }}
+    @media (min-width:425px) and (max-width:460px){
+        .logo img{
+            display: inline-block;
+            width: 120px;
+            margin-top: -7px;
+            position: relative;
+            left: -47px;
+        }
+        .ulnav{
+            display: none;
+        }
+        .checkbox{
+            display: inline-block;
+            color:#FF5492;
+            position: relative;
+            top: 9px;
+            right: 20px;
+           
+        }
+        .line{
+            line-height: 20px;
+        }
+        .line pre{
+            font-size: 10px;
+        }
+        .vid{
+          margin-top: 50px;
+        }
+        .ullogin{
+            float: right;
+            position: relative;
+            top: -10px;
+        left: 30px;
+        }
+        .ullogin li i{
+            font-size: 15px;
+        }
+}
+.ullogin li{
+    font-size: 20px;
+    padding: 20px;
+}
+.ullogin li:hover{
+    font-size: 23px;
+
+}
+@media (min-width: 320px) and (max-width: 460px){
+    .ullogin li{
+        padding: 10px;
+    }
+}
+.ullogin span{
+    border-radius: 50%;
+    background-color:#f40078;
+    color: white;
+    font-size: 10px;
+    border: 4px solid #f40078;
+    position: relative;
+    top: -10px;
+    left: -33px;
+}
+.ullogin li i{
+    color: #FF5492;
+}
+@media (min-width:1261px) and (max-width:1461px){
+    .ullogin{
+        float: right;
+        position: relative;
+        left: 50px;
+    }
+    .logo{
+        position: relative;
+        right: 20px;
+        top: 2px;
+    }
+    .vid p{
+       margin-top: 60px;
+    }
+    .vid h1{
+       margin-top: 70px;
+    }
+    .service div{
+        margin-left: 100px;
+    }
+    .ulproduct li{
+        width: 230px;
+    }
+    .ulproduct li button{
+        position: relative;
+        right: 32px;
+    }
+    
+}
+.vid {
+    position: relative;
+    top: -80px;
+    height: 500px;
+    overflow: hidden;
+}
+.vid img{
+    width: 100%;
+}
+@media (min-width:320px) and (max-width:460px){
+    .vid img{
+        width: 175%;
+        position: relative;
+        right: 150px;
+    }
+}
+@media (min-width:425px) and (max-width:460px){
+    .vid img{
+        width: 175%;
+        position: relative;
+        right: 150px;
+        margin-top: 20px;
+    }
+}
+.vid p{
+    position: relative;
+    top: -330px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    float: left;
+    padding-left: 270px;
+    letter-spacing: 3px;
+}
+.vid h1{
+    position: relative;
+    top: -280px;
+    text-transform: uppercase;
+    font-size: 45px;
+    color: white;
+    float: left;
+    right: 240px;
+}
+@media (min-width:320px) and (max-width:460px){
+    .vid p{
+        margin-top: 158px;
+        font-size: 10px;
+        padding: 20px;
+    }
+    .vid h1{
+        margin-top: -40px;
+        margin-left: 244px;
+        font-size: 30px;
+    }
+}
+.ulicon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+    top: -80px;
+}
+.ulicon li i{
+    border-radius: 50%;
+    background-color: #FF5492;
+    color: white;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    margin: auto;
+    padding-top: 15px;
+    position: relative;
+    top: -20px;
+}
+.ulicon li span{
+    font-size: 20px;
+    position: relative;
+    top: -20px;
+    padding: 0px 20px;
+    color: #FF5492;
+}
+.ulicon .li1{
+    position: relative;
+    right: 200px;
+}
+.ulicon .li3{
+    position: relative;
+    left: 200px;
+}
+@media (min-width:320px) and (max-width:380px){
+    .ulicon{
+        position: relative;
+        top: -350px;
+        
+    }
+    .ulicon .li1{
+      position: relative;
+     right: 70px;
+     width: 60px;
+    }
+    .ulicon .li3{
+        position: relative;
+        left: 50px;
+        width: 60px;
+    }
+    .ulicon .li2{
+        width: 100px;
+    }
+    .ulicon li .span{
+        position: relative;
+        left: -18px;
+        top: 0.25px;
+    }
+    .ulicon .li1 i{
+        position: relative;
+        left: 10px;
+        font-size: 20px;
+        width: 50px;
+        height: 50px;
+    }
+    .ulicon .li2 i{
+        font-size: 20px;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        left: 10px;
+    }.ulicon .li3 i{
+       
+        font-size: 20px;
+        width: 50px;
+        height: 50px;
+    }
+     .ulicon li .ss{
+        position: relative;
+        top: 4px;
+     }
+     .ulicon .li3 #span{
+        position: relative;
+       left: -22px;
+     }
+     .ulicon .li3 .ss{
+        position: relative;
+       right: 31px;
+     }
+}
+@media (min-width:425px) and (max-width:480px){
+    .ulicon{
+        position: relative;
+        top: -315px;
+        
+    }
+    .ulicon .li1{
+      position: relative;
+     right: 70px;
+     width: 60px;
+    }
+    .ulicon .li3{
+        position: relative;
+        left: 50px;
+        width: 60px;
+    }
+    .ulicon .li2{
+        width: 100px;
+    }
+    .ulicon li .span{
+        position: relative;
+        left: -18px;
+        top: 0.25px;
+    }
+    .ulicon .li1 i{
+        position: relative;
+        left: 10px;
+        font-size: 20px;
+        width: 50px;
+        height: 50px;
+    }
+    .ulicon .li2 i{
+        font-size: 20px;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        left: 10px;
+    }.ulicon .li3 i{
+       
+        font-size: 20px;
+        width: 50px;
+        height: 50px;
+    }
+     .ulicon li .ss{
+        position: relative;
+        top: 4px;
+     }
+     .ulicon .li3 #span{
+        position: relative;
+       left: -22px;
+     }
+     .ulicon .li3 .ss{
+        position: relative;
+       right: 31px;
+     }
+}
+.ulimg{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+.ulimg img{
+    width: 400px;
+    height: 450px;
+}
+.ulimg .img1{
+    animation: img1 2s linear 0s ;
+}
+@keyframes img1 {
+    0%{
+        transform: translateX(-500px);
+    }
+    100%{
+        transform: translateX(20px);
+    }
+}
+.ulimg .img3{
+    animation: img3 2s linear 0s ;
+}
+@keyframes img3 {
+    0%{
+        transform: translateX(500px);
+    }
+    100%{
+        transform: translateX(-20px);
+    }
+}
+.ulimg .img2{
+    animation: img2 2s linear 0s ;
+}
+@keyframes img2 {
+    0%{
+        transform: translatey(500px);
+    }
+    100%{
+        transform: translatey(20px);
+    }
+}
+@media (min-width: 320px) and (max-width: 460px){
+    .ulimg{
+        flex-direction: row;
+    }
+    .ulimg li img{
+        width: 120px;
+        height: 170px;
+    }
+    .simg{
+        margin-top: -330px;
+    }
+}
+.us h2{
+    font-size: 45px;
+    font-family: inherit;
+    color: rgba(0, 0, 0, 0.584);
+}
+.ulus,.ulss{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    
+}
+.ulus li{
+    padding:30px 190px;
+}
+.ulus li i{
+    font-size: 40px;
+    color: #e50e5dc4;
+}
+.ulss li{
+    padding: 0px 35px;
+}
+.ulss h3{
+    font-size: 30px;
+}
+.ulss li{
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.584);
+}
+@media (min-width: 320px) and (max-width: 460px){
+    .us h2{
+        font-size: 30px;
+    }
+    .us .ulus .li1 i{
+        position: relative;
+        left: 126px;
+        bottom: 20px;
+    }
+    .us .ulus .li2 i{
+        position: relative;
+        right: 106px;
+        bottom: 20px;
+        font-size: 30px;
+    }
+    .us .ulss li h3{
+        font-size: 21px;
+        position: relative;
+        bottom: 44px;
+    }
+    .us .ulss li div{
+        font-size: 12px;
+        position: relative;
+        bottom: 67px;
+    }
+}
+.service img{
+    float: right;
+    z-index: 1;
+    margin-top: -120px;
+    margin-bottom: -130px;
+    width: 1300px;
+}
+.service .p1{
+    line-height: 42px;
+    font-size: 40px;
+    position: relative;
+    top: 250px;
+    left: 200px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.service .p1 span{
+    position: relative;
+    left: 170px;
+    top: -40px;
+}
+.service .p2{
+    line-height: 42px;
+    font-size: 40px;
+    position: relative;
+    top: 220px;
+    left: 215px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.service .p2 span{
+    position: relative;
+    left: 175px;
+    top: -42px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.service .p3{
+    line-height: 42px;
+    font-size: 40px;
+    position: relative;
+    top: 190px;
+    left: 180px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.service .p2 .n{
+    position: relative;
+    top: 0px;
+    left: -5px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.service{
+    background-image: linear-gradient(133deg, #f40078, #f259a6, #65004a);
+    width: 100%;
+    height: 480px;
+}
+.service div{
+    position: relative;
+    top: -120px;
+    color: white;
+}
+.service button{
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    border: 1px solid #FFCCEA;
+    background-image: linear-gradient(133deg, #f40078, #f259a6, #65004a);
+    color: #FFCCEA;
+    position: relative;
+    right: 380px;
+}
+.service button:hover{
+    width: 310px;
+    box-shadow: 2px 2px 10px #bc2995;
+}
+@media (min-width: 320px) and (max-width: 460px){
+    .service img{
+        width: 439px;
+        position: relative;
+        top: 81px;
+        left: 20px;
+    }
+    .service button{
+        position: relative;
+        top: 80px;
+        width: 154px;
+        height: 20px;
+        font-size: 9px;
+        right: 97px;
+    }
+    .service .p1{
+        position: relative;
+    left: -98px;
+    top: 144px;
+    font-size: 19px;
+    }
+    .service .p1 span{
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+    .service .p2{
+        position: relative;
+        top: 129px;
+        left: -94px;
+        font-size: 19px;
+    }
+    .service .p2 span{
+        position: relative;
+       top: 0px;
+       left: 0px;
+    }
+    .service .p3{
+        position: relative;
+    top: 111px;
+    left: -134px;
+    font-size: 19px;
+    }
+    .service{
+        height: 165px;
+    }
+    }
+@media (min-width: 768px) and (max-width: 1023px){
+    .service button{
+        width: 220px;
+        height: 30px;
+        font-size: 15px;
+    }
+    .service .p1{
+        position: relative;
+        top: -120px;
+        left: -250px;
+    }
+    .service .p1 span{
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+    .service .p2{
+        position: relative;
+        top: -120px;
+        left: -230px;
+    }
+    .service .p2 span{
+        position: relative;
+       top: 0px;
+       left: 0px;
+    }
+    .service .p3{
+        position: relative;
+        top: -120px;
+        left: -340px;
+    }
+}
+@media (min-width:1231px) and (max-width:1461px){
+    .service div{
+        position: relative;
+        top: -250px;
+    }
+    .service .p1{
+        position: relative;
+        top: -50px;
+        left: -350px;
+    }
+    .service .p1 span{
+        position: relative;
+        right: 100px;
+        left: 0px;
+        top: 0px;
+    }
+    .service .p2{
+        position: relative;
+        top: -30px;
+        left: -320px;
+    }
+    .service .p2 span{
+        position: relative;
+        top: 0px;
+        left: 2px;
+    }
+    .service .p3{
+        position: relative;
+        top: 0px;
+        left: -430px;
+    }
+}
+@media (min-width:1020px) and (max-width:1230px){
+    .logo{
+        position: relative;
+        right: 45px;
+        top: -14px;
+    }
+    .ulnav li{
+       padding: 20px;
+    }
+    .ullogin{
+        float: right;
+        position: relative;
+        left: 70px;
+    }
+    .vid img{
+        width: 120%;
+    }
+    .vid p{
+       margin-top: 60px;
+      margin-left: -100px;
+    }
+    .vid h1{
+        margin-top: 50px;
+    }
+    .ulicon{
+        position: relative;
+        top: -150px;
+        
+    }
+    .ulicon .li1{
+      position: relative;
+     right: 70px;
+    }
+    .ulicon .li3{
+        position: relative;
+        left: 50px;
+    }
+    .ulimg img{
+       width: 320px;
+    }
+    .simg{
+        position: relative;
+        bottom: 120px;
+    }
+    .us{
+        margin-top: -110px;
+        margin-bottom: 40px;
+    }
+    .service img{
+        width: 1000px;
+        position: relative;
+        left: 30px
+    }
+    .service .p1{
+        position: relative;
+        top: -120px;
+        left: -270px;
+    }
+    .service .p1 span{
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+    .service .p2{
+        position: relative;
+        top: -120px;
+        left: -248px;
+    }
+    .service .p2 span{
+        position: relative;
+       top: 0px;
+       left: 0px;
+    }
+    .service .p3{
+        position: relative;
+        top: -120px;
+        left: -360px;
+    }
+    .service button{
+        position: relative;
+        top: -100px;
+        left: -270px;
+    }
+    .service{
+        height: 340px;
+    }
+    .best .ulproduct{
+        flex-wrap: wrap;
+    }
+    .best .ulproduct li{
+        width: 400px;
+    }
+    .best .ulproduct .li1{
+        position: relative;
+        left: 30px;
+    }
+    .best .ulproduct .li3{
+        position: relative;
+        left: 20px;
+    }
+    .best .ulproduct .li4{
+        position: relative;
+        left: -4px;
+    }
+    .ulshop li img{
+        width: 500px;
+    }
+    .ulshop li button{
+        margin-top: 120px;
+        width: 100px;
+    }
+}
+@media (min-width:468px) and (max-width:1023px){
+    .logo1 img{
+        width: 50px;
+        display: inline-block;
+        padding-left: 10px;
+    }
+    .logo img{
+        display: none;
+    }
+    .ulnav li{
+        padding: 10px;
+        margin-bottom: 30px;
+        position: relative;
+        top: 20px;
+        left: 24px;
+    }
+    .ullogin{
+        float: right;
+        left: 70px;
+        margin-top: 2px;
+    }
+    .vid img{
+        width: 110%;
+    }
+    .vid p{
+        position: relative;
+        margin-top: 140px;
+        right: 150px;
+    }
+    .vid h1{
+        margin-top: 130px;
+        position: relative;
+        right: 390px;
+    }
+    .ulimg img{
+        width: 300px;
+    }
+    .ulicon{
+        position: relative;
+        top: -250px;
+        
+    }
+    .ulicon .li1{
+      position: relative;
+     right: 70px;
+     width: 220px;
+    }
+    .ulicon .li3{
+        position: relative;
+        left: 50px;
+        width: 220px;
+    }
+    .ulicon .li2{
+        width: 220px;
+    }
+    .ulicon li .span{
+        position: relative;
+        left: 50px;
+        top: 0.25px;
+    }
+    .ulicon li i{
+        position: relative;
+        top: 5px;
+    }
+    .simg{
+        position: relative;
+        bottom: 200px;
+    }
+    .ulimg img{
+        width: 230px;
+        height: 280px;
+    }
+    .us{
+        margin-bottom: 40px;
+        margin-top: -190px;
+    }
+    .service img{
+        width: 700px;
+        position: relative;
+        top: 50px;
+    }
+    .service button{
+        position: relative;
+        top: 0px;
+        left: -170px;
+    }
+    .service .p1{
+        position: relative;
+        top: -12px;
+        left: -170px;
+        font-size: 36px;
+    }
+    .service .p1 span{
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+    .service .p2{
+        position: relative;
+        top: -12px;
+        left: -151px;
+        font-size: 36px;
+    }
+    .service .p2 span{
+        position: relative;
+       top: 0px;
+       left: 0px;
+    }
+    .service .p3{
+        position: relative;
+        top: -12px;
+        left: -249px;
+        font-size: 36px;
+    }
+    .service{
+        height: 250px;
+    }
+    .best .ulproduct{
+        flex-wrap: wrap;
+    }
+    .best .ulproduct li{
+        width: 300px;
+    }
+    .best .ulproduct .li1{
+        position: relative;
+        left: 0px;
+    }
+    .best .ulproduct .li3{
+        position: relative;
+        left: 20px;
+    }
+    .best .ulproduct .li4{
+        position: relative;
+        left: -4px;
+    }
+}
+.service .line{
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+    background-color: black;
+    position: relative;
+    left: 8px;
+    top: -10px;
+}
+.c{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    position: relative;
+    left: 3px;
+    top: -5px;
+}
+.line2{
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+    background-color: black;
+    position: relative;
+    top: -10px; 
+}
+.best h1{
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.best .ulbest{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+}
+.best .ulbest li button{
+    padding: 5px 30px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: white;
+    border: 1px solid white;
+}
+.best .ulbest li button:hover{
+    border: 1px solid #65004a;
+    background-image: linear-gradient(133deg, #f40078, #f259a6, #65004a) ;
+    border-radius: 10px;
+    color: #FFCCEA;
+}
+.ulproduct{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   list-style: none;
+   position: relative;
+   top: -50px;
+}
+.ulproduct li{
+    padding:10px 25px;
+    transition-duration: 1s;
+}
+.ulproduct li:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 10px #bc2995;
+    cursor: pointer;
+}
+.ulproduct .li1{
+    position: relative;
+    left: -150px;
+}
+.ulproduct .li4{
+    position: relative;
+    left: 150px;
+}
+.ulproduct .li2{
+    position: relative;
+    left: -20px;
+    top: 18px;
+}
+.ulproduct .li3{
+    position: relative;
+    left: 80px;
+}
+.ulproduct div button{
+    width: 260px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #65004a;
+    background-image: linear-gradient(133deg, #f40078, #f259a6, #65004a) ;
+    font-size: 20px;
+    color: #FFCCEA;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.ulproduct div button:hover{
+    color:#FFCCEA;
+    box-shadow: 2px 2px 20px #FF5492;
+    width: 270px;
+}
+.ulproduct .li3 button {
+    position: relative;
+    top: 9px;
+}
+.ulproduct .li2 button{
+    position: relative;
+    top: 9px;
+}
+.ulproduct li i{
+    color: #bc2995;
+    position: relative;
+    left: -55px;
+    top: 10px;
+}
+.ulproduct li span{
+    position: relative;
+    left: 70px;
+    top: -5px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+@media (min-width: 320px) and (max-width: 460px){
+    .best .ulbest{
+        flex-wrap: wrap;
+    }
+    .best .ulproduct{
+        flex-wrap: wrap;
+    }
+    .best .ulproduct li div button{
+        width: 179px;
+    }
+    .best .ulproduct li{
+        width: 152px;
+    }
+    .best .ulproduct .li2 div img{
+        position: relative;
+        left: 25px;
+    }
+    .best .ulproduct .li2 div .p{
+        position: relative;
+        left: 46px;
+    }
+    .best .ulproduct .li2 div .i{
+        position: relative;
+        left: 64px;
+    }
+    .best .ulproduct .li2 div span{
+        position: relative;
+        left: 100px;
+    }
+    .best .ulproduct .li1 div img{
+        position: relative;
+        left: 73px;
+    }
+    .best .ulproduct .li1 div .p{
+        position: relative;
+        left: 123px;
+    }
+    .best .ulproduct .li1 div .i{
+        position: relative;
+        left: 148px;
+    }
+    .best .ulproduct .li1 div span{
+        position: relative;
+        left: 186px;
+    }
+    .best .ulproduct .li1 div button{
+        position: relative;
+        left: 90px;
+    }
+    .best .ulproduct .li3 div img{
+        position: relative;
+        right: 175px;
+    }
+    .best .ulproduct .li3 div .p{
+        position: relative;
+        right: 95px;
+    }
+    .best .ulproduct .li3 div .i{
+        position: relative;
+        right: 78px;
+    }
+    .best .ulproduct .li3 div span{
+        position: relative;
+        left: -41px;
+    }
+    .best .ulproduct .li3 div button{
+        position: relative;
+        right: 136px;
+    }
+    .best .ulproduct .li4 div img{
+        position: relative;
+        right: 206px;
+    }
+    .best .ulproduct .li4 div .p{
+        position: relative;
+        right: 124px;
+    }
+    .best .ulproduct .li4 div .i{
+        position: relative;
+        right: 107px;
+    }
+    .best .ulproduct .li4 div span{
+        position: relative;
+        left: -73px;
+    }
+    .best .ulproduct .li4 div button{
+        position: relative;
+        right: 168px;
+        top: 5px;
+    }
+}
+@media (min-width: 468px) and (max-width: 1023px){
+    .ulshop{
+        grid-template-columns: auto;
+    }
+}
+.ulshop{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.ulshop img{
+    width: 750px;
+}
+.ulshop li button{
+    color: white;
+    background-color: black;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    position: relative;
+    top: -364px;
+}
+.ulshop li button:hover{
+    box-shadow: 2px 2px 10px #bc2995;
+}
+@media (min-width: 320px) and (max-width: 380px){
+    .ulshop{
+        grid-template-columns: auto;
+    }
+    .ulshop li img{
+        width: 350px;
+    }
+    .ulshop li button{
+        width: 53px;
+        font-size: 7px;
+        height: 14px;
+        position: relative;
+        top: -179px;
+    }
+}
+@media (min-width: 425px) and (max-width: 480px) {
+    .ulshop{
+        grid-template-columns: auto;
+    }
+    .ulshop li img{
+        width: 350px;
+    }
+    .ulshop li button{
+        width: 53px;
+        font-size: 7px;
+        height: 14px;
+        position: relative;
+        top: -160px;
+        right: 202px;
+    }
+}
+@media (min-width: 1020px) and (max-width: 1230px){
+    .ulshop li button{
+        width: 70px;
+        font-size: 10px;
+        height: 20px;
+    }
+}
+@media (min-width:1231px) and (max-width:1461px){
+    .ulshop{
+        grid-template-columns: auto auto;
+    }
+    .ulshop button{
+        display: none;
+    }
+    .ulshop img{
+        width: 700px;
+    }
+    .sale p{
+        margin-left: -36px;
+    }
+    .ulproduct .imgg{
+        margin-left: -40px;
+    }
+}
+.sale{
+    background-color: #FFCCEA;
+    height: 400px;
+}
+.sale .img1{
+    float: right;
+}
+.sale .img2{
+    float: left;
+}
+.sale .img3{
+    position: relative;
+    top: 50px;
+}
+.sale h1{
+    font-size: 100px;
+    position: relative;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    top: -170px;
+}
+.sale p{
+    color: white;
+    border: 1px solid black;
+    width: 260px;
+    font-size: 30px;
+    background-color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+    left: 615px;
+    top: -160px;
+}
+@media (min-width: 1020px) and (max-width: 1230px){
+    .sale p{
+        position: relative;
+        left: 370px;
+    }
+}
+.sale h2{
+    font-family:cursive;
+    font-size: 50px;
+    color: black;
+    position: relative;
+    top: -370px;
+}
+.sale .img4{
+    position: relative;
+    top: -220px;
+    left: 25px;
+}
+.sale a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    position: relative;
+    top: -265px;
+    left: -120px;
+}
+.sale a :hover{
+    font-size: 25px;
+    color: white;
+}
+@media (min-width:468px) and (max-width:1023px){
+    .sale .img3{
+       position: relative;
+       top: -350px;
+        right: 120px;
+    }
+    .sale h1{
+        margin-top: -400px;
+    }
+    .sale p{
+        position: relative;
+        left: 246px;
+    }
+}
+    @media (min-width: 320px) and (max-width: 460px){
+        .sale .img3{
+            position: relative;
+        top: -747px;
+        right: 18px;
+         }
+         .sale h1{
+            margin-top: -619px;
+        position: relative;
+        top: -660px;
+        right: 19px;
+         }
+         .sale p{
+            position: relative;
+            left: 38px;
+            top: -667px;
+         }
+         .sale h2{
+            position: relative;
+    top: -862px;
+         }
+         .sale .img4{
+            position: relative;
+    top: -722px;
+         }
+         .sale a{
+            position: relative;
+    top: -767px;
+         }
+    }
+    footer{
+        background-image:linear-gradient(133deg, #f40078, #f259a6, #65004a) ; 
+        height: 180px;
+    }
+    .footerr{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        justify-content: center;
+    }
+    .footerr a{
+        text-decoration: none;
+        padding: 20px;
+        font-size: 20px;
+        color: white;
+        transition-duration: 1s;
+    }
+    .footerr a:hover{
+        font-size: 23px;
+        cursor: pointer;
+    }
+    .ficon{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: center;
+    }
+    .ficon a{
+        padding: 20px;
+        font-size: 25px;
+        color: white;
+        transition-duration: 1s;
+    }
+    .ficon a:hover{
+        font-size: 29px;
+        color: white;
+        cursor: pointer;
+    }
+    .footer{
+        display: grid;
+        justify-content: center;
+        color: white;
+    }
+

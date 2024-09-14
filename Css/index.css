@@ -1,0 +1,633 @@
+*{
+    font-family: "Outfit", sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    min-height: 90vh;
+    align-items: center;
+}
+.container{
+    overflow: hidden;
+    position: relative;
+    width:750px;
+    height: 450px;
+    border-radius: 25px;
+    border: 1.5px solid rgb(255, 192, 237);
+    background-image: linear-gradient(133deg, #f40078, #f259a6, #65004a);
+    box-shadow: 0px 0px 25px rgb(59, 5, 36);
+}
+.Sign-up{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top:0px;
+    width: 50%;
+    height: 100%;
+}
+.Sign-up.newa{
+    left:0px;
+    padding: 0px 50px;
+    /* display: none; */
+}
+.Sign-up h1{
+    font-size: 190%;
+    font-weight: 800;
+    color: #fecdfaf2;
+    text-align: center;
+}
+.Sign-up form{
+    padding-top: 50px; 
+
+}  
+.Sign-up >form>.input-container{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin:5px 25px;
+}
+.Sign-up form .input-container>input{
+    width:100%;
+    height:100%;
+    background: transparent;
+    outline: none;
+    padding: 35px 10px 10px;
+    border: none;
+    border-bottom: 2px solid #fecdfaf2;
+    transition: all 0.5s ease-out;
+}
+.Sign-up form .input-container>input:focus{
+border-bottom-color: black;
+}
+.Sign-up form >.input-container>label{
+    position: absolute;
+    top: 50%;
+    left:0;
+    transform: translateY(-50%);
+    color: #fecdfaf2;
+    pointer-events: none;
+    transition: all 0.5s ease-out;
+} 
+.Sign-up form .input-container>input:focus+label{
+top:10px;
+color:black;
+}
+.Sign-up form >.input-container>i{
+    position: absolute;
+    top: 50%;
+    right:0px;
+    transform: translateY(-50%);
+    color: #fecdfaf2;
+    transition: all 0.5s ease-out;
+} 
+.Sign-up form .input-container>input:focus~i
+{
+color:black;
+}
+.Sign-up > form>.input-container>button{
+    position: relative;
+    border-radius: 25px;
+    border: 1px solid rgb(255, 153, 221);
+    background: rgb(255, 205, 240);
+    margin-top: 10px;
+    cursor: pointer;
+    width: 80%;
+    left: 20px;
+    font-size: 100%;
+    font-weight: 600;
+    height: 45px;
+} 
+.Sign-up >form>.input-container> button:hover {
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+    box-shadow: 1px 1px 20px rgb(255, 153, 221);
+}
+.Sign-up p{
+    margin-top: 10px;
+    text-align: center;
+    color: #fecdfaf2;
+    margin-left: 35px;
+} 
+.Sign-up a{
+    text-decoration: none;
+    color: rgb(67, 26, 88);
+    cursor: pointer;
+    font-weight: 800;
+} 
+.Sign-up a:hover{
+    color: rgb(190, 135, 178);
+}
+.container .rotate{
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 850px;
+    height: 600px;
+    background: linear-gradient(180deg, #fffdf2, #e8dfc0);
+    border-bottom:  1.5px solid pink;
+    transform: rotate(10deg) skewY(40deg);
+    transition: all 1.5s ease-in-out;
+    transform-origin: bottom right;
+    box-shadow: 0px 0px 25px rgb(59, 5, 36);
+}
+.container.active .rotate{
+background: linear-gradient(276deg, #fffdf2, #e8dfc0);
+transform: rotate(0deg) skewY(0deg);
+}
+.container .rotate2{
+    position: absolute;
+    top: 100%;
+    left:250px;
+    width: 850px;
+    height: 700px;
+    background-image: linear-gradient(303deg, #f40078, #f259a6, #65004a);
+    transform: rotate(0deg) skewY(0deg);
+    transform-origin: bottom left;
+    box-shadow: 0px 0px 25px rgb(154, 66, 116);
+    transition: all 1.5s ease-in-out;
+}
+.container.active .rotate2{
+    transform: rotate(-11deg) skewY(-40deg);
+    transition-delay:0.6s;
+    }
+.welcome-Back{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+}
+.welcome-Back.welcome{
+    right: 0;
+    padding: 0px 30px 0px 40px;
+    text-align: right;
+}
+.welcome-Back >h2{
+    font-size: 30px;
+    font-weight: 900;
+    color: #560a50f2;
+    padding-left: 20px;
+    text-transform: uppercase;
+}
+.welcome-Back>p{
+    color: rgb(67, 26, 88);
+    padding-left: 20px;
+    padding-top: 10px;
+    font-weight: 500;
+}
+.welcome-Back .button>button{
+    margin-top: 30px;
+    border-radius: 25px;
+    border: 1px solid rgb(243 129 205);
+    background: rgb(159 25 119);
+    color: white;
+    cursor: pointer;
+    width: 40%;
+    height: 80%;
+}
+.log-in{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top:0px;
+    width: 50%;
+    height: 100%;
+} 
+.container .log-in.already{
+    right:0px;
+    padding: 0px 50px;
+    pointer-events: none;
+}
+.container .Sign-up.newa .animate{
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+    transition: all 0.5s ease-in-out;
+}
+.container.active .Sign-up.newa .animate{
+    transform: translateX(-135%);
+    opacity: 0;
+    filter: blur(5px);
+    transition-delay:calc(0.1s * var(--i));
+}
+.container .welcome-Back.welcome .animate{
+    transform: translateX(0);
+    transition: all 0.5s ease-in-out;
+    }
+.container.active .welcome-Back.welcome .animate{
+    transform: translateX(135%);
+    filter: blur(5px);
+    transition-delay:calc(0.1s * var(--i));
+}
+.container .log-in.already .animate{
+    transform: translateX(135%);
+    transition:all 0.5s ease-in;
+    filter: blur(2px);
+    }
+.container.active .log-in.already .animate{
+    pointer-events: visible;
+        transform: translateX(0);
+        filter: blur(0);
+        opacity: 1;
+        transition-delay:calc(0.1s * var(--i)); 
+    }
+.container .log-in.already >form>.input-container2>button:hover {
+        transform: scale(1.2);
+        transition: all 0.2s ease;
+        
+        box-shadow: 1px 1px 20px rgb(255, 153, 221);
+    }
+    
+.container .New-account.new .animate{
+        transform: translateX(-175%);
+        transition: all 0.5s ease-in-out;
+    }
+.container.active .New-account.new .animate{
+        pointer-events: visible;
+        transform: translateX(0);
+        filter: blur(0);
+        transition-delay:calc(0.1s * var(--i));
+        }
+.log-in h2{
+    font-size: 190%;
+    font-weight: 800;
+    color: #fecdfaf2;
+    text-align: center;
+}
+.log-in form{
+    padding-top: 50px; 
+}
+
+.log-in p{
+    margin-top: 10px;
+    text-align: center;
+    color: #fecdfaf2;
+    margin-left: 29px;
+}
+.log-in p a:hover{
+    color: #750946f2;
+
+}
+.log-in a{
+    text-decoration: none;
+    color: #fecdfaf2;
+    cursor: pointer;
+}
+.log-in form .input-container2{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin:5px 25px;
+}
+.log-in form .input-container22{
+    position: relative;
+    left: 35px;
+    margin-left: 10px;
+}
+.log-in form .input-container22 >label{
+    margin-left: 10px;
+}
+.log-in form .input-container2>input{
+    width:100%;
+    height:100%;
+    background: transparent;
+    outline: none;
+    padding: 35px 10px 10px;
+    border: none;
+    border-bottom: 2px solid #fecdfaf2;;
+    transition: all 0.5s ease-out;
+}
+.log-in form .input-container2>input:focus{
+border-bottom-color: black;
+}
+.log-in form .input-container2>label{
+    position: absolute;
+    top: 35%;
+    left:0;
+    color: #fecdfaf2;
+    pointer-events: none;
+    transition: all 0.5s ease-out;
+} 
+.log-in form .input-container2>input:focus+label{
+top:0px;
+color:black;
+}
+.log-in form .input-container2 >i{
+    position: absolute;
+    top: 50%;
+    right:0px;
+    transform: translateY(-50%);
+    color: #fecdfaf2;
+    transition: all 0.5s ease-out;
+} 
+.log-in form .input-container2>input:focus~i{
+color:black;
+}
+.log-in .input-container2>button{
+    position: relative;
+    border-radius: 25px;
+    border: 1px solid rgb(255, 153, 221);
+    background: rgb(255, 205, 240);
+    margin-top: 10px;
+    cursor: pointer;
+    width: 80%;
+    left: 20px;
+    font-size: 100%;
+    font-weight: 600;
+    height: 45px;
+} 
+
+.New-account{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    bottom: 38px;
+    height: 100%;
+    width: 50%;
+}  
+.container .New-account.new {
+    left: 15px;
+    padding: 0px 150px 0px 10px;
+    text-align: left;
+    pointer-events: none;
+}
+.New-account >h2{
+    padding-top: 0px;
+    font-size: 260%;
+    font-weight: 800;
+    color: #560a50f2;
+    text-align: center;
+}
+.New-account p{
+    margin-top: 20px;
+    position: relative;
+    font-size: 100%;
+    top: 15px;
+    color: rgb(67, 26, 88);
+    text-align: center;
+}
+.New-account .buttonn {
+    margin-top:10px;
+    position: relative;
+    top:30px;
+    text-align: center;
+}
+.New-account  .buttonn>button{
+    border-radius: 25px;
+    border: 1px solid rgb(243 129 205);
+    background: rgb(159 25 119);
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 75%;
+    height: 140%;
+}
+.New-account .buttonn :hover{
+    transform: scale(1.2);
+    box-shadow: 1px 1px 20px rgb(50, 10, 36);
+} 
+
+.error{
+    transition: all 0.5s ease;
+    opacity: 3;
+    position: relative;
+    z-index: 5;
+    /* background-color: rgb(100, 12, 57); */
+} 
+.input-container>.button>button{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    cursor: pointer;
+    top: 20px;
+    right: 17px;
+    color:rgb(255, 153, 221);
+}
+.input-container2>.but>button{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    cursor: pointer;
+    top: 20px;
+    right: 17px;
+    color:rgb(255, 153, 221);
+}
+@media (min-width:325px) and (max-width:500px){
+    .main{
+        display: grid !important;
+    }
+    .container .log-in.already .animate{
+        transform: translateX(195%) !important;
+        }
+        .container .New-account.new .animate {
+            transform: translateY(-510%) !important;
+        }
+        .container{
+            width: 365px !important;
+            height: 73% !important;
+        }
+        .Sign-up{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: absolute;
+            top:0px;
+            width: 50%;
+            height: 100%;
+        }
+        .Sign-up.newa{
+            right: 10px !important;
+            padding: 0px 3px !important;
+            top: 53px !important;
+        }
+        .Sign-up h1{
+            display: none;
+        }
+        .Sign-up form{
+        padding-top: 50px;
+        width: 122%;
+        position: relative;
+        left:50px !important;
+        
+        }  
+        .Sign-up >form>.input-container{
+            position: relative;
+            width: 100%;
+            height: 50px;
+            margin:0px 25px 5px;
+        }
+        .Sign-up form .input-container>input{
+            width:100%;
+            height:100%;
+            background: transparent;
+            padding: 35px 10px 10px;
+        }
+        .Sign-up form >.input-container>i{
+            position: absolute;
+            top: 50%;
+            right:0px;
+            transform: translateY(-50%);
+        } 
+
+        .Sign-up > form>.input-container>button{
+            position: relative;
+            left: 20px !important;
+            width: 80%;
+            top: 24px;
+            margin-top: 0px !important;
+            height: 35px !important;
+        } 
+        .Sign-up p{
+            bottom: 63px !important;
+            position: relative !important;
+            width: 132% !important ;
+            right: 35px !important;
+        } 
+        .container .Sign-up.newa .animate{
+            transform: translateX(0) !important;
+        }
+        .container.active .Sign-up.newa .animate{
+            transform: translateY(135%) !important;
+        }
+            .container .rotate{
+                position: absolute;
+                transform: rotate(0deg) skewY(0deg) !important;
+                transform-origin: top left !important;
+                height: 700px !important;
+                bottom: 292px !important;
+                transform: translateY(-78%) !important
+            }
+            .welcome-Back{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                position: relative;
+                width: 100%;
+                height: 20%;
+            }
+            .container.active .rotate{
+                transform: translateY(0%)!important;
+                }
+                .container .rotate2{
+                    position: absolute;
+                    width: 850px;
+                    height: 700px;
+                    transform-origin: top left !important;
+                    transform: translateX(-34%) translateY(-111%) !important;
+                    top: 18% !important;
+                }
+                .container.active .rotate2{
+                    transform: translateX(-31%) translateY(-66%) !important;
+                }
+                .welcome-Back.welcome{
+                    right: 0;
+                    padding:0px 30px  0px 0px!important;
+                    text-align: right;
+                }
+                .welcome-Back >h2{
+                    font-size: 25px;
+                    position: relative;
+                    top: 37px !important;
+                }
+                .welcome-Back>p{
+                    padding-left: 0px !important;
+                    padding-top: 10px;
+                    position: relative;
+                    top: 34px !important;
+                    right: 22px !important;
+                }
+                .welcome-Back .button>button{
+                    width: 46%;
+                    height: 71% !important;
+                    position: relative;
+                    right: 75px !important;
+                    top: 21px !important
+                }
+                .container .welcome-Back.welcome .animate{
+                    transform: translateX(0);
+                    }
+                .container.active .welcome-Back.welcome .animate{
+                    transform: translateY(-380%) !important;
+                }
+                .New-account {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    position: absolute;
+                    height: 100%;
+                    width: 99%;}
+                    .log-in{
+                        width: 100% !important;
+                        transform: translateY(-38px);
+                    }
+                    .log-in h2 {
+                        position: relative;
+                        bottom: 26px;
+                        left: 7px;
+                        margin-bottom: 50px !important;
+                
+                    }
+                    .container .log-in.already .animate{
+                        transform: translateX(135%);
+                        transition:all 0.5s ease-in;
+                        filter: blur(2px);
+                        }
+                    .container.active .log-in.already .animate{
+                        pointer-events: visible;
+                        transform: translateX(-5%) !important;
+                        }
+                        .log-in form .input-container2 {
+                            bottom: 75px;
+                        }
+                            .log-in form{
+                                padding-top: 0px;
+                                position: relative;
+                                top: 53px;
+                            }
+                            .log-in form .input-container22 {
+                                position: relative;
+                                left: 13px !important;
+                                margin-left: 10px !important;
+                                bottom: 60px !important;}
+                                .log-in p {
+                                    position: relative;
+                                    bottom: 82px;}
+                                    .log-in .input-container2 button{
+                                        left:26px !important;
+                                    }
+                                    .log-in .input-container2 .but button{
+                                        position: absolute;
+                                        left:188px !important;
+                                    }
+                                    .container.active .New-account.new .animate {
+                                        pointer-events: visible;
+                                        transform: translateX(68px) translateY(534%) !important;}
+                                        .container .New-account.new .animate{
+                                            transform: translateX(68px) translateY(850%) !important;
+                                        }
+                                        .New-account h2{
+                                            padding-top: 0px;
+                                            font-size: 174% !important;
+                                        }
+                                        .New-account p {
+                                            margin-top: 0px !important;
+                                            position: relative;
+                                            font-size: 83% !important;
+                                            top: 15px !important;
+                                        }
+                                        .New-account .buttonn button{
+                                            margin-top: 0px !important;
+                                            width: 83% !important;
+                                            height: 135% !important;
+                                        }
+                }
+@media (min-width:501px) and (max-width:598px){
+    
+}
